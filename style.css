@@ -13,6 +13,8 @@
   position: absolute, relative, fixed
 */
 
+
+
 .macbook-air {
   background-color: #ffffff;
   display: flex;
@@ -30,6 +32,8 @@
   position: relative;
 }
 
+
+
 .overlap {
   width: 100%;
   height: 62px;
@@ -44,7 +48,7 @@
 }
 
 .inside-header {
-  width:1024px;
+  width:1084px;
   justify-content: space-between;
   position: relative;
   display: flex;
@@ -54,6 +58,11 @@
 
 .image-nav {
   display: flex;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 .allheader {
@@ -80,13 +89,71 @@
   display: block;
 }
 
-.macbook-air .image {
-  width: 120px;
-  height: 32px;
-  top: 11px;
-  left: 119px;
+
+
+.background {
+  background-image: url("https://www.voeazul.com.br/content/dam/azul/voe-azul/tvflash/hoteis-10-off-desktop-tv-flash.png");
+  width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0px;
+  left: 0px;
   object-fit: cover;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;  
+}
+
+.backgroundcontainer {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.aemgridcolumn {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+.imagediv {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.azullogo {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 0px 3px 1px;
+}
+
+.azulcontainer {
+  display: flex;
+}
+
+.macbook-air .image {
+  width: 112px;
+  vertical-align:baseline;
+  border: 0px;
+  padding: 0px;
 }
 
 .macbook-air .group {
