@@ -1,3 +1,18 @@
+/* 
+  justify-content: space-between;
+  justify-content: space-evenly;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside
+  vertical-align: baseline;
+  display: flex
+  display: block
+  display: inline-flex
+  display: list-item
+  text-align: -webkit-match-parent;
+  position: absolute, relative, fixed
+*/
+
 .macbook-air {
   background-color: #ffffff;
   display: flex;
@@ -15,13 +30,54 @@
   position: relative;
 }
 
-.macbook-air .overlap {
-  position: absolute;
-  width: 1280px;
+.overlap {
+  width: 100%;
   height: 62px;
   top: 0;
   left: 0;
   background-color: #041e42;
+  display:flex;
+  transition: background-color 0.3s ease 0s;
+  position: fixed;
+  justify-content: center;
+  z-index: 1052;
+}
+
+.inside-header {
+  width:1024px;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  margin: 0px auto;
+  padding: 0 24px;
+}
+
+.image-nav {
+  display: flex;
+}
+
+.allheader {
+  display: flex;
+  width: 100%;
+  height: 62px;
+}
+
+.ulheader {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  list-style-position: inside
+}
+
+.navheader {
+  height: 100%;
+  margin-left: 5px;
+  display: block;
 }
 
 .macbook-air .image {
@@ -42,39 +98,63 @@
 }
 
 .macbook-air .text-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  list-style-position: inside;
+  vertical-align: baseline;
 }
 
 .macbook-air .text-wrapper-2 {
-  position: absolute;
-  top: 0;
-  left: 123px;
-  font-family: "Inter", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  list-style-position: inside;
+  vertical-align: baseline;
 }
 
 .macbook-air .text-wrapper-3 {
-  position: absolute;
-  top: 0;
-  left: 241px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  list-style-position: inside; 
+  vertical-align: baseline; 
+}
+
+.navigation__item {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+  list-style-position: inside; 
+  display: list-item; 
+  text-align: -webkit-match-parent; 
+}
+
+.buttonComprar {
+  position: relative;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
+  cursor: pointer;
+  display: inline-flex;
+  border: 0px;
+  background: transparent;
+  padding: 0px 12px 0px 8px;
+  height: 100%;
+  align-items: center;
+  -webkit-box-align: center; /* oq seria isso? */
 }
 
 .macbook-air .group-2 {
