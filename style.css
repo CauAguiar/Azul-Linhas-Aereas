@@ -23,6 +23,10 @@
   width: 100%;
 }
 
+* {
+  box-sizing:border-box;
+}
+
 .macbook-air .div {
   background-color: #ffffff;
   border: 1px solid;
@@ -30,6 +34,8 @@
   width: 1280px;
   height: 1820px;
   position: relative;
+  display: block;
+  min-height: 48rem;
 }
 
 
@@ -113,16 +119,61 @@
 }
 
 .aemgridcolumn {
-  float: left;
-  clear: none;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
+  content: "";
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 40%;
+  opacity: 1.5;
+  background-color: #000;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  margin-top: -105px;
+  z-index: 5;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  grid-column: 1/13;
+  grid-row: 1/3;
+}
+
+.amain {
+  margin-top: 37px;
+  scroll-margin-top: 60px;
+  display: block;
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
+
+.relativeposition {
+  position: relative;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 
@@ -149,14 +200,14 @@
   display: flex;
 }
 
-.macbook-air .image {
+.image {
   width: 112px;
   vertical-align:baseline;
   border: 0px;
   padding: 0px;
 }
 
-.macbook-air .group {
+.group {
   position: absolute;
   width: 328px;
   height: 22px;
@@ -164,7 +215,7 @@
   left: 272px;
 }
 
-.macbook-air .text-wrapper {
+.text-wrapper {
   display: block;
   margin: 0px;
   padding: 0px;
@@ -174,7 +225,7 @@
   vertical-align: baseline;
 }
 
-.macbook-air .text-wrapper-2 {
+.text-wrapper-2 {
   display: block;
   margin: 0px;
   padding: 0px;
@@ -184,7 +235,7 @@
   vertical-align: baseline;
 }
 
-.macbook-air .text-wrapper-3 {
+.text-wrapper-3 {
   display: block;
   margin: 0px;
   padding: 0px;
@@ -224,7 +275,7 @@
   -webkit-box-align: center; /* oq seria isso? */
 }
 
-.macbook-air .group-2 {
+.group-2 {
   position: absolute;
   width: 313px;
   height: 22px;
@@ -232,7 +283,7 @@
   left: 933px;
 }
 
-.macbook-air .text-wrapper-4 {
+.text-wrapper-4 {
   position: absolute;
   top: 0;
   left: 115px;
@@ -244,7 +295,7 @@
   line-height: normal;
 }
 
-.macbook-air .text-wrapper-5 {
+.text-wrapper-5 {
   position: absolute;
   top: 0;
   left: 197px;
@@ -256,7 +307,7 @@
   line-height: normal;
 }
 
-.macbook-air .group-3 {
+.group-3 {
   position: absolute;
   width: 1280px;
   height: 1105px;
@@ -264,7 +315,7 @@
   left: 0;
 }
 
-.macbook-air .frame {
+.frame {
   position: absolute;
   width: 1280px;
   height: 659px;
@@ -272,7 +323,7 @@
   left: 0;
 }
 
-.macbook-air .text-wrapper-6 {
+.text-wrapper-6 {
   position: absolute;
   width: 222px;
   top: 41px;
@@ -286,7 +337,7 @@
   white-space: nowrap;
 }
 
-.macbook-air .p {
+.p {
   position: absolute;
   width: 440px;
   top: 97px;
@@ -299,7 +350,7 @@
   line-height: normal;
 }
 
-.macbook-air .frame-2 {
+.frame-2 {
   position: absolute;
   width: 968px;
   height: 282px;
@@ -307,7 +358,7 @@
   left: 149px;
 }
 
-.macbook-air .overlap-group-wrapper {
+.overlap-group-wrapper {
   position: absolute;
   width: 972px;
   height: 47px;
@@ -315,13 +366,13 @@
   left: 0;
 }
 
-.macbook-air .overlap-group {
+.overlap-group {
   position: relative;
   width: 969px;
   height: 47px;
 }
 
-.macbook-air .rectangle {
+.rectangle {
   position: absolute;
   width: 968px;
   height: 47px;
@@ -333,7 +384,7 @@
   border-color: #000000;
 }
 
-.macbook-air .lyon-fran-a {
+.lyon-fran-a {
   width: 194px;
   top: 15px;
   left: 4px;
@@ -346,11 +397,11 @@
   line-height: normal;
 }
 
-.macbook-air .span {
+.span {
   font-weight: 700;
 }
 
-.macbook-air .text-wrapper-7 {
+.text-wrapper-7 {
   font-family: "Inter", Helvetica;
   font-weight: 400;
   color: #000000;
@@ -358,7 +409,7 @@
   letter-spacing: 0;
 }
 
-.macbook-air .text-wrapper-8 {
+.text-wrapper-8 {
   width: 213px;
   top: 14px;
   left: 352px;
@@ -371,7 +422,7 @@
   line-height: normal;
 }
 
-.macbook-air .group-4 {
+.group-4 {
   position: absolute;
   width: 267px;
   height: 17px;
@@ -379,7 +430,7 @@
   left: 702px;
 }
 
-.macbook-air .text-wrapper-9 {
+.text-wrapper-9 {
   position: absolute;
   width: 246px;
   top: 0;
@@ -392,7 +443,7 @@
   line-height: normal;
 }
 
-.macbook-air .img {
+.img {
   position: absolute;
   width: 10px;
   height: 9px;
@@ -400,7 +451,7 @@
   left: 0;
 }
 
-.macbook-air .group-wrapper {
+.group-wrapper {
   position: absolute;
   width: 968px;
   height: 47px;
@@ -412,7 +463,7 @@
   border-color: #000000;
 }
 
-.macbook-air .group-5 {
+.group-5 {
   position: relative;
   width: 839px;
   height: 19px;
@@ -420,7 +471,7 @@
   left: 5px;
 }
 
-.macbook-air .lyon-fran-a-2 {
+.lyon-fran-a-2 {
   position: absolute;
   width: 96px;
   top: 1px;
@@ -433,7 +484,7 @@
   line-height: normal;
 }
 
-.macbook-air .text-wrapper-10 {
+.text-wrapper-10 {
   position: absolute;
   width: 106px;
   top: 0;
