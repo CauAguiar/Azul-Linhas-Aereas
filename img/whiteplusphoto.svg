@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="13" viewBox="0 0 16 13">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14.583px;
+        fill: #fff;
+        font-family: "Space Mono";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <image x="1" width="10" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANCAYAAACQN/8FAAAAcElEQVQokb2Q2w2AIAxFb52AERyJEdwMN3EE3EA2YIRriDYSWhO/PB8E6OnlAYVkILnxoc0DRkgmWpInVkesWp86t5huYPcSo5MYtS6DPANY7uUqIsVLO5zEtnelvhxpr0AyfxCztNF5raH/nj9FACeF1NHv1W/UhgAAAABJRU5ErkJggg=="/>
+  <text id="_" data-name="+" class="cls-1" x="8.837" y="8.699">+</text>
+</svg>
